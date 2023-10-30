@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+
+{% block content %}
+
+<h1>Email Validation</h1>
+<form action="submit" >
+    {% csrf_token %}
+<div class="center">
+Email: <input class="middle" name="email" type="email" >
+<div class="container">
+<button type="submit">Submit</button>
+</div>
+</div>
+</form>
+
+{% endblock %}
